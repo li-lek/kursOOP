@@ -1,0 +1,11 @@
+c:\users\user\documents\visual studio 2010\Projects\kursOOP\kursOOP\bin\Debug\kursOOP.exe.config
+c:\users\user\documents\visual studio 2010\Projects\kursOOP\kursOOP\bin\Debug\kursOOP.exe
+c:\users\user\documents\visual studio 2010\Projects\kursOOP\kursOOP\bin\Debug\kursOOP.pdb
+c:\users\user\documents\visual studio 2010\Projects\kursOOP\kursOOP\obj\x86\Debug\kursOOP.Add.resources
+c:\users\user\documents\visual studio 2010\Projects\kursOOP\kursOOP\obj\x86\Debug\kursOOP.Form1.resources
+c:\users\user\documents\visual studio 2010\Projects\kursOOP\kursOOP\obj\x86\Debug\kursOOP.Properties.Resources.resources
+c:\users\user\documents\visual studio 2010\Projects\kursOOP\kursOOP\obj\x86\Debug\kursOOP.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2010\Projects\kursOOP\kursOOP\obj\x86\Debug\kursOOP.exe
+c:\users\user\documents\visual studio 2010\Projects\kursOOP\kursOOP\obj\x86\Debug\kursOOP.pdb
+C:\Users\user\documents\visual studio 2010\Projects\kursOOP\kursOOP\obj\x86\Debug\kursOOP.csprojResolveAssemblyReference.cache
+C:\Users\user\documents\visual studio 2010\Projects\kursOOP\kursOOP\obj\x86\Debug\kursOOP.Tovar.resources
