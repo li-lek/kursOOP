@@ -10,6 +10,8 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 using System.Threading;
+using System.Data.SqlClient;
+using System.Data.SqlServerCe;
 
 namespace kursOOP
 {
@@ -87,14 +89,19 @@ namespace kursOOP
             {
                 str = inpstr.Split(' ');
                 Tovar t = new Tovar(Convert.ToInt32(str[0]), str[1], Convert.ToDateTime(str[2]), Convert.ToInt32(str[3]), Convert.ToDecimal(str[4]));
-                tov.Add(t);
-                //dataGridView1[1, dataGridView1.Rows.Count -1].Value = str[1];
-                //dataGridView1[2, dataGridView1.Rows.Count -1].Value = str[2];
-                //dataGridView1[3, dataGridView1.Rows.Count -1].Value = str[3];
-                //dataGridView1[4, dataGridView1.Rows.Count -1].Value = str[4];
+                using (SqlCeConnection conn = new SqlCeConnection(@"Data Source=D:\kurs.sdf; Persist Security Info=False;"))
+                {
+                    conn.Open();
+                    using (SqlCeCommand c = new SqlCeCommand(@"insert into tovar(name, srok, kolvo, price) values('" + t.name + "','"+t.srok.Date+"',"  + t.kolvo + "," + t.prise.ToString().Replace(',','.')+")"))
+                    {
+                        c.Connection = conn;
+                        c.ExecuteNonQuery();
+                    }
+                }
+
             }
             rd.Close();
-            dataGridView1.DataSource = tov;
+            this.tovarTableAdapter.Fill(this.kursDataSet.Tovar);
             tovarTableAdapter.Update(this.kursDataSet.Tovar);
         }
 
